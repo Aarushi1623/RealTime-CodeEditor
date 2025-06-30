@@ -34,9 +34,7 @@ const LANGUAGES = [
 ]
 
 // Socket.io connection
-const BACKEND_URL = process.env.NODE_ENV === 'production' 
-  ? window.location.origin.replace(/:\d+/, ':5000')
-  : 'http://localhost:5000'
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'
 
 function HomePage() {
   const navigate = useNavigate()
