@@ -1,0 +1,45 @@
+{
+  "name": "realtime-collaborative-code-editor",
+  "version": "1.0.0",
+  "description": "A sophisticated web-based collaborative code editor that enables multiple users to write, edit, and view code together in real-time",
+  "main": "backend/server.js",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && pnpm install",
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && pnpm run dev\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && pnpm run dev",
+    "build": "cd frontend && pnpm run build",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && pnpm run dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "collaborative",
+    "code-editor",
+    "real-time",
+    "websocket",
+    "monaco-editor",
+    "react",
+    "nodejs",
+    "express",
+    "socket.io",
+    "full-stack"
+  ],
+  "author": "Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/realtime-collaborative-code-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/realtime-collaborative-code-editor/issues"
+  },
+  "homepage": "https://github.com/username/realtime-collaborative-code-editor#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+

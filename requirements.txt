@@ -1,0 +1,75 @@
+# Realtime Collaborative Code Editor - Requirements
+
+## System Requirements
+- Node.js >= 16.0.0
+- npm >= 8.0.0 or pnpm >= 7.0.0
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+
+## Backend Dependencies (Node.js/Express)
+express@^4.18.2                 # Fast, unopinionated web framework
+socket.io@^4.7.2                # Real-time bidirectional event-based communication
+cors@^2.8.5                     # Cross-origin resource sharing middleware
+uuid@^9.0.0                     # RFC4122 (v1, v4, and v5) UUIDs
+dotenv@^16.3.1                  # Loads environment variables from .env file
+
+## Backend Development Dependencies
+nodemon@^3.0.1                  # Automatically restart server during development
+
+## Frontend Dependencies (React/Vite)
+react@^19.1.0                   # JavaScript library for building user interfaces
+react-dom@^19.1.0               # React package for working with the DOM
+react-router-dom@^6.x           # Declarative routing for React
+@monaco-editor/react@^4.7.0     # Monaco Editor for React
+socket.io-client@^4.8.1         # Socket.IO client library
+uuid@^11.1.0                    # UUID generation for client-side
+
+## UI Framework and Components
+tailwindcss@^3.x                # Utility-first CSS framework
+@radix-ui/react-*               # Low-level UI primitives (via shadcn/ui)
+lucide-react@^0.x               # Beautiful & consistent icon toolkit
+framer-motion@^11.x             # Production-ready motion library for React
+
+## Build Tools and Development
+vite@^6.x                       # Fast build tool and dev server
+@vitejs/plugin-react@^4.x       # Vite plugin for React
+eslint@^9.x                     # JavaScript linting utility
+@eslint/js@^9.x                 # ESLint JavaScript configurations
+
+## Additional Frontend Dependencies
+class-variance-authority@^0.x   # CVA for component variants
+clsx@^2.x                       # Utility for constructing className strings
+tailwind-merge@^2.x             # Merge Tailwind CSS classes
+
+## Browser Compatibility
+- Chrome >= 88
+- Firefox >= 85
+- Safari >= 14
+- Edge >= 88
+
+## Development Environment
+- VS Code (recommended)
+- Git for version control
+- Terminal/Command Line Interface
+
+## Optional Enhancements (Future)
+- MongoDB for persistent storage
+- Redis for scaling across multiple servers
+- Docker for containerization
+- JWT for user authentication
+- Rate limiting middleware
+
+## Installation Commands
+
+### Backend Setup
+cd backend
+npm install
+
+### Frontend Setup  
+cd frontend
+pnpm install
+
+## Running the Application
+1. Start backend: cd backend && npm start
+2. Start frontend: cd frontend && pnpm run dev
+3. Access application at http://localhost:5173
+
